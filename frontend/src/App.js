@@ -57,7 +57,7 @@ function App() {
       }
 
       const res = await axios.post(
-        "http://bfhl-fullstack-app.onrender.com/bfhl", // 🔥 Change after deployment
+        "https://bfhl-fullstack-app.onrender.com/bfhl", // 🔥 Change after deployment
         { data: parsed }
       );
 
