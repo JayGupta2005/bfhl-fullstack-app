@@ -16,9 +16,9 @@ router.post("/", (req, res) => {
     const result = processData(data);
 
     res.json({
-      user_id: "yourname_ddmmyyyy",
-      email_id: "your@email.com",
-      college_roll_number: "your_roll",
+      user_id: "jaygupta_17-05-2005",
+      email_id: "jg5835@srmist.edu.in",
+      college_roll_number: "RA2311003030470",
       ...result
     });
 
