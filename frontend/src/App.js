@@ -56,10 +56,15 @@ function App() {
         throw new Error("❌ Invalid JSON format");
       }
 
-      const res = await axios.post(
-        "https://bfhl-fullstack-app.onrender.com/bfhl", // 🔥 Change after deployment
-        { data: parsed }
-      );
+        const res = await axios({
+          method: "POST",
+          url: "https://bfhl-fullstack-app.onrender.com/bfhl",
+          data: { data: parsed },
+          headers: {
+            "Content-Type": "application/json"
+          },
+          timeout: 15000
+        });
 
       setResult(res.data);
 
